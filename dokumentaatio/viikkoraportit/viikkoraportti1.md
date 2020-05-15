@@ -9,3 +9,6 @@ Tällä viikolla palauttelin mieleen eri järjestämisalgoritmeja ja niiden toim
 Tässä vaiheessa mikään ei ole varsinaisesti epäselvää. Valitsemani aiheen laajuus hieman mietityttää siltä kannalta, että riittääkö työ varmasti hyvään arvosanaan jos saan projektin toteutettua täysmääräisesti. En kuitenkaan vielä hirveästi huolehdi tästä, sillä työtä on tosiaan ainakin alustavasti ajatellen helppo laajentaa jos se on jäämässä liian suppeaksi.
 
 Seuraavaksi alan suunnitella työni arkkitehtuuria.
+
+
+#### Työhön käytetty aika viikolla 1: 3h
