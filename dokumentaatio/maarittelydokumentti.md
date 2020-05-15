@@ -5,11 +5,11 @@ Projektini siis tutkii eri järjestämisalgoritmien tehokkuutta.
 
 Toteutan ainakin seuraavat järjestysalgoritmit:
 
-- Pikajärjestäminen
-- Lomitusjärjestäminen
-- Kekojärjestäminen
+- Pikajärjestäminen (aikavaativuus keskimäärin O(n log n), tilavaativuus keskimäärin O(log n))
+- Lomitusjärjestäminen (aikavaativuus O(n log n), tilavaativuus O(n))
+- Kekojärjestäminen (aikavaativuus O(n log n), tilavaativuus O(1))
 
 Ohjelma saa käyttäjältä syötteenä järjesteltävän taulukon pituuden. Taulukon pituudelle tulee olemaan kuitenkin jokin järkevä yläraja.
-Ohjelma palauttaa käyttäjälle tilastoja algoritmien suoritusnopeuksista.
+Ohjelma palauttaa käyttäjälle tilastoja algoritmien tehokkuudesta.
 
 Lähteinä käytän mm. Wikipediaa sekä järjestämisalgoritmeja käsitteleviä nettisivuja. Lähdeluettelo täsmentyy myöhemmin. 
