@@ -18,3 +18,4 @@ Aineopintojen harjoitustyö: tietorakenteet ja algoritmit
 ### Viikkoraportit:
 
 [Viikkoraportti 1](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/viikkoraportit/viikkoraportti1.md)
+[Viikkoraportti 2](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/viikkoraportit/viikkoraportti2.md)
