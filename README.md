@@ -2,6 +2,17 @@
 
 Aineopintojen harjoitustyö: tietorakenteet ja algoritmit
 
+## Jacoco ja checkstyle
+
+Jacoco-testikattavuusraportin voi luoda komennolla
+
+`mvn test jacoco:report`
+
+Checkstyle-raportin voi luoda komennolla 
+
+`mvn jxr:jxr checkstyle:checkstyle`
+
+
 ## Dokumentaatio
 
 [Määrittelydokumentti](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/maarittelydokumentti.md)
