@@ -13,7 +13,6 @@ public class QuickSort {
         return this.arr;
     }
 
-    
     private int part(int a, int b) {
         int k = a;
         for (int i = a + 1; i <= b; i++) {
@@ -30,22 +29,20 @@ public class QuickSort {
         return k;
     }
 
-    
     /**
-     * Metodi järjestää rekursiivisesti luokkaan tallennetun taulukon annetulla välillä
-     * olevat alkiot quicksort-algoritmin avulla.
+     * Metodi järjestää rekursiivisesti luokkaan tallennetun taulukon annetulla
+     * välillä olevat alkiot quicksort-algoritmin avulla.
      *
      * @param a Tarkasteltavan välin pienin arvo
      * @param b Tarkasteltavan välin suurin arvo
-     *     
+     *
      */
-    
     public void sort(int a, int b) {
-        if (a >= b) {
-            return;
+        if (a < b) {
+            int k = part(a, b);
+
+            sort(a, k - 1);
+            sort(k + 1, b);
         }
-        int k = part(a, b);
-        sort(a, k - 1);
-        sort(k + 1, b);
-    }
+    } 
 }
