@@ -6,7 +6,9 @@
 - jarjestaminen.ui
 
 	- Ui.java
+		- ohjelman käyttöliittymä
 	- Commands.java
+		- metodit joiden avulla kutsutaan järjestämisalgoritmeja käyttöliittymään, ja mitataan niiden suoritukseen kulunut aika
 
 - jarjestaminen.algoritmit
 	
@@ -15,6 +17,7 @@
 	- MergeSort.java
 	- QuickSort.java
 	- TimSort.java
+		
 
 
 ## Saavutetut aika- ja tilavaativuudet
