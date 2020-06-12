@@ -1,11 +1,9 @@
 package jarjestaminen.algoritmit;
 
-import jarjestaminen.algoritmit.QuickSort;
 import java.util.Arrays;
 import java.util.Random;
 import org.junit.After;
 import org.junit.Assert;
-import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 

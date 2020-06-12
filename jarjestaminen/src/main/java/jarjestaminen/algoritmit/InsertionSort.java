@@ -22,7 +22,7 @@ public class InsertionSort {
     public void sort(int a, int b) {
         int n = b;
 
-        for (int i = a+1; i <= n - 1; i++) {
+        for (int i = a + 1; i <= n - 1; i++) {
             int ii = i - 1;
 
             while (ii >= 0 && arr[ii] > arr[ii + 1]) {

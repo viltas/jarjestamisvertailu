@@ -13,7 +13,7 @@ public class QuickSort {
         return this.arr;
     }
 
-    private int part(int a, int b) {
+    public int part(int a, int b) {
         int k = a;
         for (int i = a + 1; i <= b; i++) {
             if (arr[i] < arr[a]) {

@@ -1,12 +1,8 @@
 package jarjestaminen.ui;
 
-import jarjestaminen.algoritmit.HeapSort;
-import jarjestaminen.algoritmit.InsertionSort;
-import jarjestaminen.algoritmit.IntroSort;
-import jarjestaminen.algoritmit.MergeSort;
-import jarjestaminen.algoritmit.QuickSort;
-import jarjestaminen.algoritmit.TimSort;
+import java.util.Random;
 import java.util.Scanner;
+
 
 public class Ui {
 
@@ -17,35 +13,41 @@ public class Ui {
         System.out.println("Anna taulukon pituus väliltä: ");
         int length = Integer.parseInt(sc.nextLine());
         System.out.println("");
-
-        int[] arr = arrayGenerator(length);
-        int[] arr2 = arrayGenerator(length);
-        int[] arr3 = arrayGenerator(length);
-
-        long time = 0;
         
-        
-        try{
-            time = Commands.quickSort(arr, arr2, arr3);
+        if (length == -1) {
+            SuoritusTestit.kouluarvosanat();
+            
         }
-        catch(StackOverflowError e){
+
+        System.out.println("Yläraja taulukon arvoille: ");
+        int limit1 = Integer.parseInt(sc.nextLine());
+
+        System.out.println("Alaraja taulukon arvoille: ");
+        int limit2 = Integer.parseInt(sc.nextLine());
+
+        int[] arr = arrayGenerator(length, limit1, limit2);
+
+        //printArray(arr);
+        long time = 0;
+
+        try {
+            time = Commands.quickSort(arr);
+        } catch (StackOverflowError e) {
             System.err.println("Stackoverflowerror!");
         }
-        
 
         System.out.println("QuickSort: ");
-        System.out.println("Aikaa kului  " + time + " nanosekuntia.");
+        System.out.println("Aikaa kului keskimäärin " + time + " nanosekuntia.");
 
         System.out.println("");
         System.out.println("");
 
-        try{
-            time = Commands.insertionSort(arr, arr2, arr3);
-        }
-        catch(StackOverflowError e){
+        try {
+            time = Commands.insertionSort(arr);
+        } catch (StackOverflowError e) {
             System.err.println("Stackoverflowerror!");
+            time = 0;
         }
-
 
         System.out.println("InsertionSort: ");
         System.out.println("Aikaa kului keskimäärin  " + time + " nanosekuntia.");
@@ -53,11 +55,11 @@ public class Ui {
         System.out.println("");
         System.out.println("");
 
-        try{
-            time = Commands.heapSort(arr, arr2, arr3);
-        }
-        catch(StackOverflowError e){
+        try {
+            time = Commands.heapSort(arr);
+        } catch (StackOverflowError e) {
             System.err.println("Stackoverflowerror!");
+            time = 0;
         }
 
         System.out.println("HeapSort: ");
@@ -65,12 +67,12 @@ public class Ui {
 
         System.out.println("");
         System.out.println("");
-        
-        try{
-            time = Commands.mergeSort(arr, arr2, arr3);
-        }
-        catch(StackOverflowError e){
+
+        try {
+            time = Commands.mergeSort(arr);
+        } catch (StackOverflowError e) {
             System.err.println("Stackoverflowerror!");
+            time = 0;
         }
 
         System.out.println("MergeSort: ");
@@ -78,12 +80,12 @@ public class Ui {
 
         System.out.println("");
         System.out.println("");
-        
-        try{
-            time = Commands.timSort(arr, arr2, arr3);
-        }
-        catch(StackOverflowError e){
+
+        try {
+            time = Commands.timSort(arr);
+        } catch (StackOverflowError e) {
             System.err.println("Stackoverflowerror!");
+            time = 0;
         }
 
         System.out.println("TimSort: ");
@@ -99,12 +101,13 @@ public class Ui {
         System.out.println("");
     }
 
-    static int[] arrayGenerator(int n) {
+    static int[] arrayGenerator(int n, int limit1, int limit2) {
+        Random rand = new Random();
         int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {          
-            arr[i] = (int)(Math.random()*1000000);
-
+        for (int i = 0; i < n; i++) {
+            arr[i] = rand.nextInt((limit1 - limit2) + 1) + limit2;
         }
+        
         return arr;
     }
 

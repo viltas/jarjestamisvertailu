@@ -8,75 +8,60 @@ import jarjestaminen.algoritmit.TimSort;
 
 public class Commands {
 
-    static long quickSort(int[] arr, int[] arr2, int[] arr3) {
-        long[] times = new long[3];
-        for (int i = 0; i < 3; i++) {
-            QuickSort quick = new QuickSort(arr);
-            long start = System.nanoTime();
-            quick.sort(0, arr.length - 1);
-            long end = System.nanoTime();
-            long time = end - start;
-            times[i] = time;
-        }
-        long x = (times[0] + times[1] + times[2]) / 3;
-        return x;
+    public static long quickSort(int[] arr) {
+        int[] arrCopy = new int[arr.length];
+        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
+        QuickSort quick = new QuickSort(arrCopy);
+        long start = System.nanoTime();
+        quick.sort(0, arrCopy.length - 1);
+        long end = System.nanoTime();
+        long time = end - start;
+        return time;
     }
 
-    static long heapSort(int[] arr, int[] arr2, int[] arr3) {
-        long[] times = new long[3];
-        for (int i = 0; i < 3; i++) {
-            HeapSort heap = new HeapSort(arr);
-            long start = System.nanoTime();
-            heap.sort();
-            long end = System.nanoTime();
-            long time = end - start;
-            times[i] = time;
-        }
-        long x = (times[0] + times[1] + times[2]) / 3;
-        return x;
+    public static long heapSort(int[] arr) {
+        int[] arrCopy = new int[arr.length];
+        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
+        HeapSort heap = new HeapSort(arrCopy);
+        long start = System.nanoTime();
+        heap.sort();
+        long end = System.nanoTime();
+        long time = end - start;
+        return time;
     }
 
-    static long mergeSort(int[] arr, int[] arr2, int[] arr3) {
-        long[] times = new long[3];
-        for (int i = 0; i < 3; i++) {
-            MergeSort merge = new MergeSort(arr);
-            long start = System.nanoTime();
-            merge.sort(0, arr.length - 1);
-            long end = System.nanoTime();
-            long time = end - start;
-            times[i] = time;
-        }
-        long x = (times[0] + times[1] + times[2]) / 3;
-
-        return x;
+    public static long mergeSort(int[] arr) {
+        int[] arrCopy = new int[arr.length];
+        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
+        MergeSort merge = new MergeSort(arrCopy);
+        long start = System.nanoTime();
+        merge.sort(0, arrCopy.length - 1);
+        long end = System.nanoTime();
+        long time = end - start;
+        return time;
     }
 
-    static long timSort(int[] arr, int[] arr2, int[] arr3) {
-        long[] times = new long[3];
-        for (int i = 0; i < 3; i++) {
-            TimSort tim = new TimSort(arr);
-            long start = System.nanoTime();
-            tim.sort();
-            long end = System.nanoTime();
-            long time = end - start;
-            times[i] = time;
-        }
-        long x = (times[0] + times[1] + times[2]) / 3;
-        return x;
+    public static long timSort(int[] arr) {
+        int[] arrCopy = new int[arr.length];
+        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
+        TimSort tim = new TimSort(arrCopy);
+        long start = System.nanoTime();
+        tim.sort();
+        long end = System.nanoTime();
+        long time = end - start;
+        return time;
     }
 
-    static long insertionSort(int[] arr, int[] arr2, int[] arr3) {
-        long[] times = new long[3];
-        for (int i = 0; i < 3; i++) {
-            InsertionSort insertion = new InsertionSort(arr);
-            long start = System.nanoTime();
-            insertion.sort(0, arr.length - 1);
-            long end = System.nanoTime();
-            long time = end - start;
-            times[i] = time;
-        }
-        long x = (times[0] + times[1] + times[2]) / 3;
-        return x;
+    public static long insertionSort(int[] arr) {
+        int[] arrCopy = new int[arr.length];
+        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
+        InsertionSort insertion = new InsertionSort(arrCopy);
+        long start = System.nanoTime();
+        insertion.sort(0, arrCopy.length - 1);
+        long end = System.nanoTime();
+        long time = end - start;
+        return time;
     }
 
+    
 }

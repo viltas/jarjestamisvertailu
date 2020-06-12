@@ -2,7 +2,7 @@ package jarjestaminen.algoritmit;
 
 public class MergeSort {
 
-    private static int[] arr;
+    private int[] arr;
 
     public MergeSort(int[] arr) {
 
