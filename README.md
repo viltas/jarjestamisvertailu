@@ -35,3 +35,5 @@ Checkstyle-raportin voi luoda komennolla
 [Viikkoraportti 3](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/viikkoraportit/viikkoraportti3.md)
 
 [Viikkoraportti 4](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/viikkoraportit/viikkoraportti4.md)
+
+[Viikkoraportti 5](https://github.com/viltas/jarjestamisvertailu/blob/master/dokumentaatio/viikkoraportit/viikkoraportti5.md)
