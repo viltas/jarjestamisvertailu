@@ -4,10 +4,7 @@ Tällä viikolla sain valitettavan vähän konkreettisia muutoksia aikaiseksi, m
 
 Olen tutkinut paljon viimeisen hybridialgoritmin (introsort) toteutusta, mutta yrittämisestä huolimatta en vielä onnistunut siinä. Osittain siksi tämä viikko jäikin osaltaan hieman pettymykseksi, mutta enköhän saa sen vielä tehtyä.
 
-<<<<<<< HEAD
-=======
+
 Aloitin myös laajemman testaamisen suunnittelun ja toteuttamisen, joskin suorituskykytestaaminen on yhä alkutekijöissään. Alkavalla viikolla otan tavoitteeksi dokumentaation täydentämisen sekä viimeisen algoritmin toteuttamisen. 
 
-
->>>>>>> c8dc40977c44209bc3428c75a12126bce84483e4
 #### Työhön käytetty aika viikolla 5: 10h
