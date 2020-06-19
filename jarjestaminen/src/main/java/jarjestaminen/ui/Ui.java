@@ -90,6 +90,20 @@ public class Ui {
 
         System.out.println("TimSort: ");
         System.out.println("Aikaa kului keskimäärin  " + time + " nanosekuntia.");
+        
+        
+        System.out.println("");
+        System.out.println("");
+
+        try {
+            time = Commands.introSort(arr);
+        } catch (StackOverflowError e) {
+            System.err.println("Stackoverflowerror!");
+            time = 0;
+        }
+
+        System.out.println("IntroSort: ");
+        System.out.println("Aikaa kului keskimäärin  " + time + " nanosekuntia.");
 
     }
 

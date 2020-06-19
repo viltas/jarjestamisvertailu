@@ -16,23 +16,28 @@ public class IntroSort {
         return this.arr;
     }
 
+    public void sort() {
+        int maxDepth = (int) (2 * Math.floor(Math.log(arr.length) / Math.log(2)));
+        introSort(maxDepth, 0, arr.length - 1);
+    }
+
+    private void introSort(int maxDepth, int a, int b) {
+        if (b - a <= 16) {
+            InsertionSort in = new InsertionSort(arr);
+            in.sort(a, b);
+        } else {
+            if (maxDepth == 0) {
+                HeapSort heap = new HeapSort(arr);
+                heap.sort();
+                return;
+            } else {
+                maxDepth = maxDepth - 1;
+                QuickSort quick = new QuickSort(arr);
+                int p = quick.part(a, b);
+                introSort(maxDepth -1, a, p - 1);
+                introSort(maxDepth -1, p + 1, b);
+
+            }
+        }
+    }
 }
-
-/*
-
-procedure sort(A : array):
-    let maxdepth = ⌊log(length(A))⌋ × 2
-    introsort(A, maxdepth)
-
-procedure introsort(A, maxdepth):
-    n ← length(A)
-    if n ≤ 1:
-        return  // base case
-    else if maxdepth = 0:
-        heapsort(A)
-    else:
-        p ← partition(A)  // assume this function does pivot selection, p is the final position of the pivot
-        introsort(A[0:p-1], maxdepth - 1)
-        introsort(A[p+1:n], maxdepth - 1)
-
- */
