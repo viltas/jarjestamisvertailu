@@ -2,7 +2,7 @@
 
 ## Ohjelman suorittaminen
 
-- Ohjelma voidaan suorittaa lataamalla release omalle tietokoneelle:
+Ohjelma voidaan suorittaa lataamalla release omalle tietokoneelle:
 https://github.com/viltas/jarjestamisvertailu/releases/tag/loppupalautus
 
 Tämän jälkeen ohjelma on suoritettavissa komennolla 
