@@ -21,6 +21,8 @@ Nyt ohjelma on suoritettavissa komennolla
 
 ## Ohjelman käyttö ja sallitut syötteet
 
+Ohjelman käyttö tapahtuu tekstikäyttöliittymän kautta.
+
 Käynnistyttyään ohjelma kysyy käyttäjältä tarkasteltavan taulukon pituutta. Käyttäjän tulee antaa ohjelmalle numeroarvo eikä se saa olla negatiivinen (pl. -1 josta edempänä.) Jos käyttäjä antaa ohjelmalle kelvottoman arvon, kysyy ohjelma käyttäjältä taulukon pituutta uudestaan niin kauan kunnes käyttäjä antaa ei-negatiivisen numeroarvon taikka arvon -1.
 
 Positiivisen arvon saatuaan ohjelma kysyy vielä kahta arvoa. Ensimmäinen näistä on generoitavan taulukon arvojen suuruuden yläraja. Tämän jälkeen ohjelma kysyy arvoille alarajaa. Näidenkin arvojen kohdalla ohjelma kysyy käyttäjältä uudelleen niin kauan kunnes käyttäjä antaa kelvollisen numeroarvon.
