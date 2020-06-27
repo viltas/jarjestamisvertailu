@@ -33,9 +33,46 @@ Ohjelman käyttöliittymä, algoritmit ja yksikkötestit on eroteltu toisistaan 
 	- TimSortTest.java	
 
 
+## Toteutetut algoritmit
+
+### Järjestämisalgoritmit
+
+- Insertion sort
+	- Hidas (O(n2)) mutta vakaa järjestämisalgoritmi. Se pitää taulukon alkuosan järjestyksessä ja lisää siihen yksi kerrallaan alkioita taulukon loppuosasta oikealle paikalleen.
+
+- Quicksort
+	- Epävakaa järjestämisalgoritmi, jossa valitaan alkio ns. pivot-alkioksi ja muut alkiot lajitellaan kahteen ryhmään pivotia hyödyntäen, ja sama toistetaan ryhmille rekursiivisesti uudella pivot-alkiolla. Quicksortin aikavaativuus on keskimäärin O(n log(n)), mutta pahimmassa tapauksessa O(n2) jos alkiot ovat jo järjestyksessä.	
+	
+- Merge sort
+	- Tehokas (O(n log n)) ja vakaa järjestämisalgoritmi. Taulukko jaetaan kahteen keskenään yhtä suureen osataulukkoon ja osataulukot järjestetään rekursiolla. Sen jälkeen järjestetyt osataulukot lomitetaan yhteen järjestetyksi taulukoksi.
+	
+- Heapsort
+	- Kekorakenteeseen perustuva lajittelualgoritmi. Kekorakenteen muodostamisen jälkeen keon suurin alkio poistetaan ja se asetetaan valmiin listan alkuun ja keko käsitellään uudestaan siten, että kekoehto täyttyy. Näin tehdään niin kauan kunnes taulukko on järjestetty.
+	
+
+
+
+### Hybridialgoritmit
+
+- Introsort
+  - Tehokas hybridialgoritmi joka hyödyntää seuraavia algoritmeja:
+    - Quicksort
+    - Heapsort
+    - insertion sort
+  - Lähtökohtaisesti introsort järjestää taulukon quicksortin avulla. Tietyssä rekursiosyvyydessä introsort siirtyy kuitenkin käyttämään heapsortia väistäen näin quicksortin kannalta epäedulliset tilanteet. Järjestettävän määrän ollessa tarpeeksi pieni algoritmi siirtyy insertion sortiin joka on kaikkein nopein silloin kun järjestettävien alkioiden määrä on matala.   
+  
+  
+- Timsort
+  - Tehokas hybridialgoritmi joka hyödyntää seuraavia algoritmeja:
+    - merge sort
+    - insertion sort
+  - Taulukko jaetaan lohkoihin jotka järjestetään insertion sortilla. Sen jälkeen lohkot yhdistetään toisiinsa merge sortin lomituksen avulla.
+
+
+
 ## Saavutetut aika- ja tilavaativuudet
 
-- Määrittelydokumentissa esitetyt aika- ja tilavaativuudet saavutettiin:
+- Määrittelydokumentissa esitetyt aikavaativuudet saavutettiin:
 	- Quicksort (aikavaativuus keskimäärin O(n log n), tilavaativuus keskimäärin O(log n))
 	- Merge sort (aikavaativuus O(n log n), tilavaativuus O(n))
 	- Heapsort (aikavaativuus O(n log n), tilavaativuus O(1))
