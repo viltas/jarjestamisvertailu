@@ -62,9 +62,8 @@
                 <version>0.8.4</version>
                 <configuration>
                     <excludes>
-			
-			<exclude>cards/Main.class</exclude>                  
-                        <exclude>cards/UI/*</exclude>
+			<exclude>jarjestaminen/Main.class</exclude>                  
+                        <exclude>jarjestaminen/ui/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>

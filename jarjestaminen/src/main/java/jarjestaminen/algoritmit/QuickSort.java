@@ -9,10 +9,23 @@ public class QuickSort {
         this.arr = arr;
     }
 
+    /**
+     * Metodi palauttaa järjestettävän taulukon.
+     *
+     * @return luokkaan tallennettu taulukko
+     */
     public int[] getArr() {
         return this.arr;
     }
 
+    /**
+     * Metodi valitsee jakoalkion ja siirtää taulukon alkioita sen mukaisesti ja
+     * palauttaa sitten kohdan jossa jakoalkio lopuksi on.
+     *
+     * @param a Tarkasteltavan välin pienin arvo
+     * @param b Tarkasteltavan välin suurin arvo
+     *
+     */
     public int part(int a, int b) {
         int k = a;
         for (int i = a + 1; i <= b; i++) {
@@ -23,10 +36,21 @@ public class QuickSort {
                 arr[k] = temp;
             }
         }
-        int temp = arr[a];
-        arr[a] = arr[k];
-        arr[k] = temp;
+        swap(a, k);
         return k;
+    }
+
+    /**
+     * Metodi vaihtaa taulukossa kahden arvon paikkaa keskenään.
+     *
+     * @param i Tarkasteltavan arvo sijainti taulukossa
+     * @param ii Toisen tarkasteltavan arvon sijainti taulukossa
+     *
+     */
+    private void swap(int i, int ii) {
+        int j = arr[i];
+        arr[i] = arr[ii];
+        arr[ii] = j;
     }
 
     /**
@@ -38,11 +62,10 @@ public class QuickSort {
      *
      */
     public void sort(int a, int b) {
-        if (a < b) {
+        if (a <= b) {
             int k = part(a, b);
-
             sort(a, k - 1);
             sort(k + 1, b);
         }
-    } 
+    }
 }

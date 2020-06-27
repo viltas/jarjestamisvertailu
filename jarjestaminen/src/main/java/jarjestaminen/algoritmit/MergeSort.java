@@ -10,6 +10,11 @@ public class MergeSort {
 
     }
 
+    /**
+     * Metodi palauttaa järjestettävän taulukon.
+     *
+     * @return luokkaan tallennettu taulukko
+     */
     public int[] getArr() {
         return this.arr;
     }
@@ -24,9 +29,11 @@ public class MergeSort {
      */
     public void sort(int a, int b) {
         if (a < b) {
+            //haetaan keskikohta
             int k = (a + b) / 2;
             sort(a, k);
             sort(k + 1, b);
+            //lomitetaan järjestetyt osat merge-metodilla toisiinsa
             merge(a, k, b);
         }
     }
@@ -40,8 +47,12 @@ public class MergeSort {
      *
      */
     public void merge(int a, int k, int b) {
+
+        //selvitetään lomitettavien taulukoiden pituudet
         int lA = k - a + 1;
         int lB = b - k;
+
+        // luodaan väliaikaiset taulukot ja siirretään niihin väliaikaisdata
         int[] arrA = new int[lA];
         int[] arrB = new int[lB];
         for (int i = 0; i < lA; i++) {
@@ -50,6 +61,8 @@ public class MergeSort {
         for (int i = 0; i < lB; i++) {
             arrB[i] = arr[k + 1 + i];
         }
+
+        //yhdistetään taulukot toisiinsa
         int x = a;
         int i = 0;
         int ii = 0;

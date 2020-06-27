@@ -10,6 +10,11 @@ public class InsertionSort {
 
     }
 
+    /**
+     * Metodi palauttaa järjestettävän taulukon.
+     *
+     * @return luokkaan tallennettu taulukko
+     */
     public int[] getArr() {
         return this.arr;
     }
@@ -18,13 +23,15 @@ public class InsertionSort {
      * Metodi järjestää taulukon luokkaan tallennetun taulukon arvot pienimmästä
      * suurimpaan quicksort-algoritmia hyödyntäen.
      *
+     * @param a Tarkasteltavan välin pienin arvo 
+     * @param b Tarkasteltavan välin suurin arvo
      */
     public void sort(int a, int b) {
         int n = b;
-
-        for (int i = a + 1; i <= n - 1; i++) {
+        // käydään taulukon kaikki paitsi ensimmäinen alkio läpi
+        for (int i = a + 1; i <= n; i++) {
             int ii = i - 1;
-
+            // siirretään alkio järjestetyn taulukon alkuosaan omalle paikalleen        
             while (ii >= 0 && arr[ii] > arr[ii + 1]) {
                 int temp = arr[ii];
                 arr[ii] = arr[ii + 1];

@@ -10,11 +10,9 @@ import jarjestaminen.algoritmit.TimSort;
 public class Commands {
 
     public static long quickSort(int[] arr) {
-        int[] arrCopy = new int[arr.length];
-        System.arraycopy(arr, 0, arrCopy, 0, arr.length);
-        QuickSort quick = new QuickSort(arrCopy);
+        QuickSort quick = new QuickSort(arr);
         long start = System.nanoTime();
-        quick.sort(0, arrCopy.length - 1);
+        quick.sort(0, arr.length - 1);
         long end = System.nanoTime();
         long time = end - start;
         return time;
@@ -63,7 +61,7 @@ public class Commands {
         long time = end - start;
         return time;
     }
-    
+
     public static long introSort(int[] arr) {
         int[] arrCopy = new int[arr.length];
         System.arraycopy(arr, 0, arrCopy, 0, arr.length);
@@ -75,5 +73,4 @@ public class Commands {
         return time;
     }
 
-    
 }
