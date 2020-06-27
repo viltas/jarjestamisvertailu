@@ -5,17 +5,21 @@
 Ohjelma voidaan suorittaa lataamalla release omalle tietokoneelle:
 https://github.com/viltas/jarjestamisvertailu/releases/tag/loppupalautus
 
-Tämän jälkeen ohjelma on suoritettavissa komennolla 
+Tämän jälkeen ohjelma on suoritettavissa komennolla
+
 `java -jar jarjestaminen.jar`
 
 
 Ohjelma voidaan myös suorittaa lataamalla ohjelmakansio omalle tietokoneelle ja käyttämällä komentoa
+
 `mvn compile exec:java -Dexec.mainClass=jarjestaminen.Main`
 
 Suoritettava jar-tiedosto voidaan generoida komennolla
+
 `mvn package`
 
 Nyt ohjelma on suoritettavissa komennolla
+
 `java -jar jarjestaminen.jar`
 
 
