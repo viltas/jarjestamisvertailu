@@ -33,12 +33,8 @@ Sovelluksen avulla käyttäjä voi testata numeroarvoja sisältävien taulukoide
 
 ## Perusversion toiminnallisuus
 
-Käyttäjä antaa ohjelmalle taulukon pituuden (pituudelle on olemassa jokin järkevä yläraja) ja ohjelma täyttää taulukon satunnaisilla luvuilla. Käyttäjä valitsee vertailtavat algoritmit ja ohjelma järjestää taulukon näillä algoritmeilla. Lopuksi ohjelma tulostaa käyttäjälle tilastot algoritmien suoritusnopeuksista.
+Käyttäjä antaa ohjelmalle taulukon pituuden sekä arvojen suuruuden ylä- ja alarajan. Sitten ohjelma täyttää taulukon satunnaisilla luvuilla. Seuraavaksi ohjelma järjestää äsken luodun taulukon kuudella yllä esitetyllä algoritmilla. Lopuksi ohjelma tulostaa käyttäjälle algoritmien suoritusnopeudet.
 
-
-## Laajentamismahdollisuuksia
-
-Jos aikaa jää, lisään ohjelmaan vielä lisää eri järjestämisalgoritmeja vertailtavaksi, sekä lisää käyttäjän antamia kriteerejä järjestettävän taulukon sisällölle. 
 
 ## Lähteet
 
@@ -46,5 +42,15 @@ Jos aikaa jää, lisään ohjelmaan vielä lisää eri järjestämisalgoritmeja 
   - https://en.wikipedia.org/wiki/Quicksort
   - https://en.wikipedia.org/wiki/Mergesort
   - https://en.wikipedia.org/wiki/Insertionsort
+  - https://en.wikipedia.org/wiki/HeapSort
+  - https://en.wikipedia.org/wiki/TimSort
+  - https://en.wikipedia.org/wiki/IntroSort
+
+
  
 - Tirakirja (https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/)
+
+- https://www.geeksforgeeks.org
+
+- https://www.baeldung.com
+
