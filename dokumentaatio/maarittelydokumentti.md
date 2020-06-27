@@ -13,7 +13,7 @@ Sovelluksen avulla käyttäjä voi testata numeroarvoja sisältävien taulukoide
 - Quicksort (aikavaativuus keskimäärin O(n log n), tilavaativuus keskimäärin O(log n))
 - Merge sort (aikavaativuus O(n log n), tilavaativuus O(n))
 - Heapsort (aikavaativuus O(n log n), tilavaativuus O(1))
-- Insertion sort (aikavaativuus O(n2, tilavaativuus  O(1))
+- Insertion sort (aikavaativuus O(n2), tilavaativuus  O(1))
 
 
 ### Hybridialgoritmit
