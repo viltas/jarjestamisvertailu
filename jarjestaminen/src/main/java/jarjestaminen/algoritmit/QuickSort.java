@@ -24,6 +24,7 @@ public class QuickSort {
      *
      * @param a Tarkasteltavan välin pienin arvo
      * @param b Tarkasteltavan välin suurin arvo
+     * @return Kohta jossa jakoalkio lopuksi on
      *
      */
     public int part(int a, int b) {
