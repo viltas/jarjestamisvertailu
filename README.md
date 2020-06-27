@@ -2,7 +2,7 @@
 
 Aineopintojen harjoitustyö: tietorakenteet ja algoritmit
 
-## Jacoco ja checkstyle
+## Jacoco, checkstyle ja javadoc
 
 Jacoco-testikattavuusraportin voi luoda komennolla
 
@@ -11,6 +11,10 @@ Jacoco-testikattavuusraportin voi luoda komennolla
 Checkstyle-raportin voi luoda komennolla 
 
 `mvn jxr:jxr checkstyle:checkstyle`
+
+Javadoc luodaan komennolla
+
+`mvn javadoc:javadoc`
 
 
 ## Dokumentaatio
