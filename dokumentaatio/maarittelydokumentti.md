@@ -50,6 +50,8 @@ Käyttäjä antaa ohjelmalle taulukon pituuden sekä arvojen suuruuden ylä- ja 
  
 - Tirakirja (https://www.cs.helsinki.fi/u/ahslaaks/tirakirja/)
 
+- https://www.stackoverflow.com
+
 - https://www.geeksforgeeks.org
 
 - https://www.baeldung.com
