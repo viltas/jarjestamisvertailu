@@ -52,14 +52,13 @@ public class HeapSort {
     }
 
     /**
-     * Metodi varmistaa, että keko on kekoehtoa totteleva maksimikeko.
+     * Metodi keon rakentamiseen.
      *
      * @param s Tarkasteltavan keon koko
      * @param x Tarkasteltavan keon juuri
      *
      */
     private void heapify(int s, int x) {
-
         int top = x;
         int a = 1 + 2 * x;
         int b = 2 + 2 * x;
@@ -74,6 +73,5 @@ public class HeapSort {
             heapify(s, top);
         }
     }
-    
-    
+
 }
