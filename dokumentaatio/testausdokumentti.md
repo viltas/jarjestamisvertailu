@@ -61,7 +61,11 @@ Suuren taulukon tapauksessa oli huomattavaa, että heapsort tuntui toimivan vars
 Lyhyttä taulukkoa (100) järjestettäessä huomattiin, että insertionsort ja quicksort ovat pieniä tietomääriä järjestettäessä hyvinkin tehokkaita. Kouluarvosanat ja syklittäinen data vastaavat parhaiten tosielämässä kohdattavaa järjestettävää dataa ja niiden kohdalla quicksort osoittautui hyvin nopeaksi. Pienenkin datan kohdalla introsort osoittautui kuitenkin nopeimmaksi ratkaisuksi.
 
 
-![](https://raw.githubusercontent.com/viltas/jarjestamisvertailu/master/dokumentaatio/kaaviot2.jpg)
+
+
+![](https://raw.githubusercontent.com/viltas/jarjestamisvertailu/master/dokumentaatio/kaaviot2.png)
+
+Yllä olevassa kuvassa näemme kaavion joka kuvaa algoritmien toimintaa syklittäisessä järjestyksessä olleen taulukon järjestämisessä eri pituisilla taulukoilla. Kuvaus tukee esitettyjen algoritmien aikavaativuuksia. Insertionsortin aikavaativuus on O(n2) kun taas muiden O(n log n).
 
 
 ## Testien toistaminen
