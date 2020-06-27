@@ -3,6 +3,8 @@
 
 ## Ohjelman yleisrakenne
 
+Ohjelman kieli on java ja se on toteutettu netbeans-projektina. Ohjelman käyttöliittymä on toteutettu tekstikäyttöliittymänä.
+
 Ohjelman käyttöliittymä, algoritmit ja yksikkötestit on eroteltu toisistaan seuraavasti:
 
 - src/main/java/jarjestaminen/ui
@@ -33,12 +35,23 @@ Ohjelman käyttöliittymä, algoritmit ja yksikkötestit on eroteltu toisistaan 
 
 ## Saavutetut aika- ja tilavaativuudet
 
--
+- Määrittelydokumentissa esitetyt aika- ja tilavaativuudet saavutettiin:
+	- Quicksort (aikavaativuus keskimäärin O(n log n), tilavaativuus keskimäärin O(log n))
+	- Merge sort (aikavaativuus O(n log n), tilavaativuus O(n))
+	- Heapsort (aikavaativuus O(n log n), tilavaativuus O(1))
+	- Insertion sort (aikavaativuus O(n2), tilavaativuus O(1))
+	- Timsort (aikavaativuus keskimäärin O(n log n), tilavaativuus O(n))
+	- Introsort (aikavaativuus O(n log n), tilavaativuus O(n))
+	
 
-## Suorituskyky- ja O-analyysivertailu
+## Suorituskykyvertailu
 
--
+- Timsort ja introsort -hybridialgoritmit osoittautuivat todistetusti muita järjestämisalgoritmeja nopeammiksi varsinkin suurilla syötteillä. Tämä oli odotettavissa, sillä niissä yhdistyy useamman algoritmin vahvoja puolia joilla toisaalta väistetään käytettyjen algoritmien heikkoudet. Algoritmien nopeuseroista lisää testausdokumentissa.
+
 
 ## Puutteet ja parannusehdotukset
 
--
+- Ohjelma olisi hyötynyt suuresti graafisesta käyttöliittymästä. Käyttöliittymä olisi voinut mahdollisesti piirtää käyttäjälle graafeja algoritmien nopeuseroista. Tällainen toteutus olisi käyttäjälle hyödyllisempi kun tarkoitus on vertailla algoritmien eroja.
+
+- Quicksort-algoritmia olisi voinut optimoida. Nykyinen ratkaisu johtaa virheilmoitukseen (stackoverflowerror) joillakin suurilla syötteillä.
+
